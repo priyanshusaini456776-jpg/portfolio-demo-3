@@ -1,189 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
-    <meta charset="UTF-8">
-    <title>Untitled</title>
-    <link rel="stylesheet" href="./style.css">
-
-  </head>
-    
-  <body>
-  <!DOCTYPE html>
-
-<html lang="en">
-
 <head>
+    <!-- Basic Meta Tags for SEO & Responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Elite Gym - Achieve your fitness goals with our expert trainers and modern facilities.">
+    <meta name="keywords" content="Gym, Fitness, Personal Training, Health, Workout, Classes">
+    <meta name="author" content="Your Name">
+    <title>Elite Gym</title>
 
-  <meta charset="UTF-8">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
-  <title>PowerFit Gym</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="stylesheet" href="style.css">
-
+    <!-- AOS Library for Scroll Animations -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
-
 <body>
-
-<header>
-
-  <h1 class="logo">PowerFit Gym</h1>
-
-  <nav>
-
-    <a href="#home">Home</a>
-
-    <a href="#pricing">Pricing</a>
-
-    <a href="#trainers">Trainers</a>
-
-    <a href="#contact">Contact</a>
-
-  </nav>
-
-</header>
-
-<section id="home" class="hero">
-
-  <h2>Transform Your Body</h2>
-
-  <p>Join the best gym in your city. Build strength & confidence.</p>
-
-  <a href="#pricing" class="btn">Join Now</a>
-
-</section>
-
-<section id="pricing">
-
-  <h2>Membership Plans</h2>
-
-  <div class="cards">
-
-    <div class="card">
-
-      <h3>Basic</h3>
-
-      <p>₹999 / Month</p>
-
-      <ul>
-
-        <li>Gym Access</li>
-
-        <li>Locker</li>
-
-      </ul>
-
-      <button>Select</button>
-
+    <!-- Page Loader -->
+    <div id="loader">
+        <div class="spinner"></div>
     </div>
 
-    <div class="card">
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Elite Gym</div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#trainers">Trainers</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="theme-toggle" id="theme-toggle">🌙</div>
+        </nav>
+    </header>
 
-      <h3>Standard</h3>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content" data-aos="fade-up">
+            <h1>Welcome to Elite Gym</h1>
+            <p>Transform Your Body, Transform Your Life</p>
+            <div class="hero-buttons">
+                <a href="#pricing" class="btn btn-primary">Join Now</a>
+                <a href="#services" class="btn btn-secondary">View Plans</a>
+            </div>
+        </div>
+    </section>
 
-      <p>₹1999 / Month</p>
+    <!-- About Us Section -->
+    <section id="about" class="about-section" data-aos="fade-up">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <p>Elite Gym is dedicated to helping you reach your fitness goals. Our mission is to provide a welcoming environment with state-of-the-art equipment and experienced trainers.</p>
+            <div class="team-highlights">
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/150" alt="Trainer 1">
+                    <h3>John Doe</h3>
+                    <p>Head Trainer</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/150" alt="Trainer 2">
+                    <h3>Jane Smith</h3>
+                    <p>Nutrition Expert</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      <ul>
+    <!-- Services Section -->
+    <section id="services" class="services-section" data-aos="fade-up">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <img src="https://via.placeholder.com/100" alt="Weight Training">
+                <h3>Weight Training</h3>
+                <p>Build strength and tone your muscles with guided sessions.</p>
+            </div>
+            <div class="service-card">
+                <img src="https://via.placeholder.com/100" alt="Cardio Classes">
+                <h3>Cardio Classes</h3>
+                <p>High-energy workouts to improve stamina and burn calories.</p>
+            </div>
+            <div class="service-card">
+                <img src="https://via.placeholder.com/100" alt="Yoga & Stretching">
+                <h3>Yoga & Stretching</h3>
+                <p>Enhance flexibility, balance, and mental wellness.</p>
+            </div>
+        </div>
+    </section>
 
-        <li>All Basic Features</li>
+    <!-- Trainers Section -->
+    <section id="trainers" class="trainers-section" data-aos="fade-up">
+        <h2>Meet Our Trainers</h2>
+        <div class="trainers-grid">
+            <div class="trainer-card">
+                <img src="https://via.placeholder.com/200" alt="Trainer 1">
+                <h3>Mike Johnson</h3>
+                <p>Strength Coach</p>
+                <div class="social-links">
+                    <a href="#">🐦</a>
+                    <a href="#">💼</a>
+                    <a href="#">📸</a>
+                </div>
+            </div>
+            <div class="trainer-card">
+                <img src="https://via.placeholder.com/200" alt="Trainer 2">
+                <h3>Emma Williams</h3>
+                <p>Yoga Instructor</p>
+                <div class="social-links">
+                    <a href="#">🐦</a>
+                    <a href="#">💼</a>
+                    <a href="#">📸</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <li>Personal Trainer</li>
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section" data-aos="fade-up">
+        <h2>Membership Plans</h2>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <h3>Basic</h3>
+                <p>$29 / month</p>
+                <ul>
+                    <li>Access to gym equipment</li>
+                    <li>1 personal training session</li>
+                    <li>Free Wi-Fi</li>
+                </ul>
+                <a href="#contact" class="btn btn-primary">Sign Up</a>
+            </div>
+            <div class="pricing-card">
+                <h3>Standard</h3>
+                <p>$49 / month</p>
+                <ul>
+                    <li>All Basic features</li>
+                    <li>Weekly training sessions</li>
+                    <li>Nutrition guidance</li>
+                </ul>
+                <a href="#contact" class="btn btn-primary">Sign Up</a>
+            </div>
+            <div class="pricing-card">
+                <h3>Premium</h3>
+                <p>$79 / month</p>
+                <ul>
+                    <li>All Standard features</li>
+                    <li>Unlimited personal training</li>
+                    <li>Access to exclusive classes</li>
+                </ul>
+                <a href="#contact" class="btn btn-primary">Sign Up</a>
+            </div>
+        </div>
+    </section>
 
-      </ul>
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section" data-aos="fade-up">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <p>"Elite Gym helped me lose 20kg and feel amazing!"</p>
+                <h4>- Sarah L.</h4>
+            </div>
+            <div class="testimonial-card">
+                <p>"The trainers are professional and supportive. Highly recommend!"</p>
+                <h4>- David K.</h4>
+            </div>
+            <div class="testimonial-card">
+                <p>"Great environment and equipment. I love the yoga classes."</p>
+                <h4>- Emily R.</h4>
+            </div>
+        </div>
+    </section>
 
-      <button>Select</button>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section" data-aos="fade-up">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+            <form id="contactForm">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <p>📍 123 Fitness St, Healthy City</p>
+                <p>📞 +123 456 7890</p>
+                <div class="social-links">
+                    <a href="#">🐦</a>
+                    <a href="#">💼</a>
+                    <a href="#">📸</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Elite Gym. All rights reserved.</p>
+        <ul class="footer-nav">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#trainers">Trainers</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </footer>
 
-    <div class="card">
-
-      <h3>Premium</h3>
-
-      <p>₹2999 / Month</p>
-
-      <ul>
-
-        <li>All Features</li>
-
-        <li>Diet Plan</li>
-
-      </ul>
-
-      <button>Select</button>
-
-    </div>
-
-  </div>
-
-</section>
-
-<section id="trainers">
-
-  <h2>Our Trainers</h2>
-
-  <div class="cards">
-
-    <div class="card">
-
-      <h3>Rahul Sharma</h3>
-
-      <p>Strength & Muscle Expert</p>
-
-    </div>
-
-    <div class="card">
-
-      <h3>Aman Verma</h3>
-
-      <p>Cardio & Fat Loss Coach</p>
-
-    </div>
-
-    <div class="card">
-
-      <h3>Priya Singh</h3>
-
-      <p>Yoga & Flexibility Trainer</p>
-
-    </div>
-
-  </div>
-
-</section>
-
-<section id="contact">
-
-  <h2>Contact Us</h2>
-
-  <form onsubmit="submitForm(event)">
-
-    <input type="text" placeholder="Your Name" required>
-
-    <input type="email" placeholder="Your Email" required>
-
-    <textarea placeholder="Your Message" required></textarea>
-
-    <button type="submit">Send Message</button>
-
-  </form>
-
-</section>
-
-<footer>
-
-  <p>© 2026 PowerFit Gym | All Rights Reserved</p>
-
-</footer>
-
-<script src="script.js"></script>
-
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js"></script>
 </body>
-
-</html>
-    <script  src="./script.js"></script>
-
-  </body>
-  
 </html>
